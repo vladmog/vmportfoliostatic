@@ -6,6 +6,8 @@ import Quadrant2 from "../components/landing/quadrant2";
 import Quadrant3 from "../components/landing/quadrant3";
 import Quadrant4 from "../components/landing/quadrant4";
 
+import Layout from "../components/layout";
+
 const S = {};
 
 S.Container = styled.div`
@@ -32,6 +34,7 @@ S.Container = styled.div`
 
 
 const Landing = (props) => (
+  <Layout>
     <S.Container>
         <Quadrant1 />
         <Quadrant2 />
@@ -41,6 +44,7 @@ const Landing = (props) => (
             Icons made by Freepik from www.flaticon.com
         </footer>  
     </S.Container>
+  </Layout>
 )
 
 

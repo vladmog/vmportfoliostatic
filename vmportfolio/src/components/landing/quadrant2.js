@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import { Link } from "gatsby"
 
 import Entry from "./entry";
 
@@ -79,6 +80,11 @@ S.Block = styled.div`
     }
 `
 
+S.MoreLink = styled(props => <Link {...props} />)`
+    color: black;
+    text-decoration: none;
+`
+
 
 
 const entries = [
@@ -117,7 +123,7 @@ const Quadrant2 = (props) => (
                 <Entry entry = {entry}/>
             )
         })}
-        <a>MORE</a>
+        <S.MoreLink to = "/journal">MORE</S.MoreLink>
         <S.Block />
     </S.Container>
 )
