@@ -31,7 +31,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: node.fields.slug,
+      path: `/journal${node.fields.slug}`,
       component: path.resolve(`./src/templates/journal-post.js`),
       context: {
         // Data passed to context is available

@@ -41,9 +41,11 @@ const Landing = ({ data }) => {
             <S.Container>
                 <Quadrant1 />
                 <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
-                {data.allMarkdownRemark.edges.map(({ node }) => (
+                {data.allMarkdownRemark.edges.map(({ node }) => {
+                    let slug = `/journal${node.fields.slug}`
+                    return(
                     <div key={node.id}>
-                        <Link to={node.fields.slug}>
+                        <Link to={slug}>
                         <h3>
                             {node.frontmatter.title}{" "}
                             <span>
@@ -53,7 +55,7 @@ const Landing = ({ data }) => {
                         <p>{node.excerpt}</p>
                         </Link>
                     </div>
-                ))}
+                )})}
                 <Quadrant2 />
                 <Quadrant3 />
                 <Quadrant4 />  
@@ -75,6 +77,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
+            category
           }
           fields {
             slug
