@@ -1,21 +1,51 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import styled from "styled-components";
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Quadrant1 from "../components/landing/quadrant1";
+import Quadrant2 from "../components/landing/quadrant2";
+import Quadrant3 from "../components/landing/quadrant3";
+import Quadrant4 from "../components/landing/quadrant4";
 
-const IndexPage = () => (
+import Layout from "../components/layout";
+
+const S = {};
+
+S.Container = styled.div`
+    top: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: acumin-pro-wide, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: white;
+
+    footer {
+        align-self: center;
+    
+        @media (max-width: 480px) {
+            font-size: 12px;
+        }
+    }
+    
+`
+
+
+
+const Landing = (props) => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <S.Container>
+        <Quadrant1 />
+        <Quadrant2 />
+        <Quadrant3 />
+        <Quadrant4 />  
+        <footer>
+            Icons made by Freepik from www.flaticon.com
+        </footer>  
+    </S.Container>
   </Layout>
 )
 
-export default IndexPage
+
+export default Landing;
