@@ -6,10 +6,39 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/src/markdown-pages`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/src/mdx-pages`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`],
+        defaultLayouts: {
+          // posts: require.resolve("./src/components/posts-layout.js"),
+          mdx: require.resolve("./src/templates/mdxTemplate.js"),
+        }
+    }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
         path: `${__dirname}/src/markdown-pages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `mdx-pages`,
+        path: `${__dirname}/src/mdx-pages`,
       },
     },
     `gatsby-transformer-remark`,
