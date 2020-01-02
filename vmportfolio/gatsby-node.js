@@ -20,6 +20,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
   const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`)
+  const mdxPostTemplate = path.resolve(`src/templates/mdxTemplate.js`)
 
   const result = await graphql(`
     {
@@ -38,9 +39,29 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `)
 
+  const mdxResult = await graphql(`
+    {
+      allMdx(sort: {fields: frontmatter___date}) {
+        edges {
+          node {
+            frontmatter {
+              path
+              date
+            }
+          }
+        }
+      }
+    }
+  `)
+    console.log(mdxResult)
   // Handle errors
   if (result.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+
+  if (mdxResult.errors) {
+    reporter.panicOnBuild(`Error while running MDX GraphQL query.`)
     return
   }
 
@@ -48,6 +69,23 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     createPage({
       path: node.frontmatter.path,
       component: blogPostTemplate,
+      context: {}, // additional data can be passed via context
+    })
+  })
+
+  mdxResult.data.allMdx.edges.forEach(({ node }) => {
+    console.log("=====================")
+    console.log("=====================")
+    console.log("=====================")
+    console.log("=====================")
+    console.log(node.frontmatter.date)
+    console.log("=====================")
+    console.log("=====================")
+    console.log("=====================")
+    console.log("=====================")
+    createPage({
+      path: node.frontmatter.path,
+      component: mdxPostTemplate,
       context: {}, // additional data can be passed via context
     })
   })

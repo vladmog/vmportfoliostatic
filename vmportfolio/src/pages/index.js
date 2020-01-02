@@ -35,7 +35,7 @@ S.Container = styled.div`
 
 const Landing = ({
     data: {
-      allMarkdownRemark: { edges },
+      allMdx: { edges },
     },
   }) => {
     const Posts = edges
@@ -78,14 +78,13 @@ export default Landing;
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMdx(sort: {fields: frontmatter___date}) {
       edges {
         node {
           id
-          excerpt(pruneLength: 250)
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
             path
+            date(formatString: "MMMM DD, YYYY")
             title
           }
         }
@@ -93,3 +92,7 @@ export const pageQuery = graphql`
     }
   }
 `
+
+{
+  
+}
