@@ -78,14 +78,13 @@ export default Landing;
 
 export const pageQuery = graphql`
   query {
-    allMdx {
+    allMdx(sort: {fields: frontmatter___date}) {
       edges {
         node {
           id
-          excerpt(pruneLength: 250)
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
             path
+            date(formatString: "MMMM DD, YYYY")
             title
           }
         }
@@ -93,3 +92,7 @@ export const pageQuery = graphql`
     }
   }
 `
+
+{
+  
+}

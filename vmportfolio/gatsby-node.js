@@ -41,14 +41,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const mdxResult = await graphql(`
     {
-      allMdx(
-        sort: {order: DESC, fields: [frontmatter ___date] }
-        limit: 1000
-      ) {
+      allMdx(sort: {fields: frontmatter___date}) {
         edges {
           node {
             frontmatter {
               path
+              date
             }
           }
         }
@@ -76,7 +74,15 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   })
 
   mdxResult.data.allMdx.edges.forEach(({ node }) => {
-    console.log(node.frontmatter.path)
+    console.log("=====================")
+    console.log("=====================")
+    console.log("=====================")
+    console.log("=====================")
+    console.log(node.frontmatter.date)
+    console.log("=====================")
+    console.log("=====================")
+    console.log("=====================")
+    console.log("=====================")
     createPage({
       path: node.frontmatter.path,
       component: mdxPostTemplate,

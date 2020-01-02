@@ -1,5 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { MDXRenderer } from "gatsby-plugin-mdx"
+
 
 export default function MdxTemplate({
   data, // this prop will be injected by the GraphQL query below.
@@ -9,6 +11,7 @@ export default function MdxTemplate({
   return (
     <div className="blog-post-container">
       <div className="blog-post">
+        <h1>MDX TEMPLATE</h1>
         <h1>frontmatter title</h1>
         <h1>{frontmatter.title}</h1>
         <hr />
@@ -16,10 +19,11 @@ export default function MdxTemplate({
         <h2>{frontmatter.date}</h2>
         <hr />
         <h1>content</h1>
-        <div
+        {/* <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: body }}
-        />
+        /> */}
+        <MDXRenderer>{body}</MDXRenderer>
       </div>
     </div>
   )

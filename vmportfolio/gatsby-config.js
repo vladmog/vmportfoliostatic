@@ -18,16 +18,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        extensions: [`.mdx`],
-        defaultLayouts: {
-          // posts: require.resolve("./src/components/posts-layout.js"),
-          mdx: require.resolve("./src/templates/mdxTemplate.js"),
-        }
-    }
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
@@ -40,6 +30,16 @@ module.exports = {
         name: `mdx-pages`,
         path: `${__dirname}/src/mdx-pages`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`],
+        defaultLayouts: {
+          // posts: require.resolve("./src/components/posts-layout.js"),
+          mdx: require.resolve("./src/templates/mdxTemplate.js"),
+        }
+      }
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
