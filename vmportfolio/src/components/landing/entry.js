@@ -1,9 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "gatsby"
+
 
 const S = {};
 
-S.Container = styled.div`
+S.Container = styled(props => <Link {...props} />)`
+    text-decoration: none;
+    color: black;
     width: 100%;
     height: auto;
     display: flex;
@@ -132,9 +136,11 @@ S.Container = styled.div`
 
 `
 
+
 function Entry(props){
+    console.log(props)
     return(
-        <S.Container>
+        <S.Container to={props.entry.path}>
             <span>{props.entry.title}</span>
             <div>
                 <span>{props.entry.category}</span>

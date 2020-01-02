@@ -38,15 +38,25 @@ const Landing = ({
       allMdx: { edges },
     },
   }) => {
-    const Posts = edges
-      .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-      .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+    // const Posts = edges
+    //   .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+    //   .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+    const posts = edges.map((edge) => {
+      return (
+        {
+          path: edge.node.frontmatter.path,
+          date: edge.node.frontmatter.date,
+          title: edge.node.frontmatter.title,
+          category: edge.node.frontmatter.category,
+        }
+      )
+    })
+    console.log(posts)
     return (
         <Layout>
             <S.Container>
-                <div>{Posts}</div>
                 <Quadrant1 />
-                <Quadrant2 />
+                <Quadrant2 posts = {posts}/>
                 <Quadrant3 />
                 <Quadrant4 />  
                 <footer>
@@ -86,6 +96,7 @@ export const pageQuery = graphql`
             path
             date(formatString: "MMMM DD, YYYY")
             title
+            category
           }
         }
       }

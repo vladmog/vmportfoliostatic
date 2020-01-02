@@ -118,7 +118,7 @@ const entries = [
 const Quadrant2 = (props) => (
     <S.Container>
         <h2>JOURNAL</h2>
-        {entries.map((entry) => {
+        {props.posts.map((entry) => {
             return (
                 <Entry entry = {entry}/>
             )

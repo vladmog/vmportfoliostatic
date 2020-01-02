@@ -52,7 +52,7 @@ S.Container = styled.div`
 
 const Layout = ({ children }) => (
   <div>
-    {/* <Nav /> */}
+    <Nav />
     {children}
   </div>
 )
