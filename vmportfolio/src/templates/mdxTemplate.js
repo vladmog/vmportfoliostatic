@@ -1,31 +1,53 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import Layout from "../components/layout"
+import styled from "styled-components"
 
+const S = {};
+S.Container = styled.div`
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+  padding: 0px 100px;
+  // border: solid green 5px;
+  font-family: 'Archivo Black', sans-serif;    
+  font-weight: 700;
+  left 0px;
+  right 0px;
+  margin-bottom: 30px;
+  margin-top: 8vh;
+
+
+  @media (max-width: 1024px) {
+
+  }
+  @media (max-width: 768px) {
+      padding: 0px 40px;
+  }
+  @media (max-width: 480px) {
+      padding: 0px 20px;
+  }
+`
 
 export default function MdxTemplate({
   data, // this prop will be injected by the GraphQL query below.
 }) {
-  const { mdx } = data // data.markdownRemark holds your post data
+  const { mdx } = data // data.mdx holds your post data
   const { frontmatter, body } = mdx
   return (
-    <div className="blog-post-container">
-      <div className="blog-post">
-        <h1>MDX TEMPLATE</h1>
-        <h1>frontmatter title</h1>
+    <Layout>
+      <S.Container className="blog-post">
         <h1>{frontmatter.title}</h1>
         <hr />
-        <h1>frontmatter date</h1>
         <h2>{frontmatter.date}</h2>
         <hr />
-        <h1>content</h1>
-        {/* <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: body }}
-        /> */}
         <MDXRenderer>{body}</MDXRenderer>
-      </div>
-    </div>
+      </S.Container>
+    </Layout>
   )
 }
 

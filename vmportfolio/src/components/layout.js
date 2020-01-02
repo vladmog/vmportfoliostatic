@@ -42,6 +42,7 @@ const S = {}
 S.Container = styled.div`
   display: flex;
   flex-direction: column;
+  font-family: 'Archivo Black', sans-serif;    
   width: calc(100vw - (100vw - 100%));
   // width: 100vw;
   align-items: center;

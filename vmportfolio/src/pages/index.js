@@ -8,7 +8,6 @@ import Quadrant3 from "../components/landing/quadrant3";
 import Quadrant4 from "../components/landing/quadrant4";
 
 import Layout from "../components/layout";
-import PostLink from "../components/post-link"
 
 const S = {};
 
@@ -67,23 +66,6 @@ const Landing = ({
     )
   }
 
-
-
-// const Landing = (props) => (
-//   <Layout>
-//     <S.Container>
-//         <Quadrant1 />
-//         <Quadrant2 />
-//         <Quadrant3 />
-//         <Quadrant4 />  
-//         <footer>
-//             Icons made by Freepik from www.flaticon.com
-//         </footer>  
-//     </S.Container>
-//   </Layout>
-// )
-
-
 export default Landing;
 
 export const pageQuery = graphql`
@@ -104,6 +86,3 @@ export const pageQuery = graphql`
   }
 `
 
-{
-  
-}

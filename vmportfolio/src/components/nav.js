@@ -13,9 +13,10 @@ S.Container = styled.div`
     position: fixed;
     top: 0px;
     right: 0px;
+    font-family: 'Archivo Black', sans-serif;    
+
     left: 0px;
-    font-family: acumin-pro-wide, sans-serif;
-    font-weight: 700;
+    // font-weight: 700;
     font-style: normal;
     box-sizing: border-box;
     background-color: white;

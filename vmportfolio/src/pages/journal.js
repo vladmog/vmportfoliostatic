@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Banner from "../components/journal/banner"
 import Entry from "../components/landing/entry"
 import Layout from "../components/layout"
+import { graphql } from "gatsby"
 
 
 const S = {};
@@ -62,21 +63,55 @@ const entries = [
     },
 ]
 
-const Journal = (props) => (
-    <Layout>
-        <S.Container>
-            <Banner />
-            
-            {entries.map((entry) => {
-                return (
-                    <Entry entry = {entry}/>
-                )
-            })}
-            
-            
-        </S.Container>
-    </Layout>
-)
+const Journal = ({
+    data: {
+      allMdx: { edges },
+    },
+}) => {
+    const posts = edges.map((edge) => {
+        return (
+          {
+            path: edge.node.frontmatter.path,
+            date: edge.node.frontmatter.date,
+            title: edge.node.frontmatter.title,
+            category: edge.node.frontmatter.category,
+          }
+        )
+    })
+    return (
+        <Layout>
+            <S.Container>
+                <Banner />
+                
+                {posts.map((entry) => {
+                    return (
+                        <Entry entry = {entry}/>
+                    )
+                })}
+                
+                
+            </S.Container>
+        </Layout>
+    )
+}
 
 
 export default Journal;
+
+export const pageQuery = graphql`
+  query {
+    allMdx(sort: {fields: frontmatter___date}) {
+      edges {
+        node {
+          id
+          frontmatter {
+            path
+            date(formatString: "MMMM DD, YYYY")
+            title
+            category
+          }
+        }
+      }
+    }
+  }
+`
