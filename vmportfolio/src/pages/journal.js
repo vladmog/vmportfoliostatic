@@ -16,7 +16,6 @@ S.Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px 100px;
     // border: solid green 5px;
     font-family: acumin-pro-wide, sans-serif;
     font-weight: 700;
@@ -24,16 +23,6 @@ S.Container = styled.div`
     right 0px;
     margin-bottom: 30px;
 
-
-    @media (max-width: 1024px) {
-
-    }
-    @media (max-width: 768px) {
-        padding: 0px 40px;
-    }
-    @media (max-width: 480px) {
-        padding: 0px 20px;
-    }
 `
 const entries = [
     {

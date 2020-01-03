@@ -49,12 +49,29 @@ S.Container = styled.div`
   box-sizing: border-box;
   background-color: white;
 `
+S.Content = styled.div`
+margin: auto;
+margin-top: 8vh;
+max-width: 1024px;
+@media (max-width: 1024px) {
+  max-width: 900px;
+}
+@media(max-width: 900px) {
+  max-width: 768px;
+}
+@media (max-width: 768px) {
+  max-width: 480px;
+}
+@media (max-width: 480px) {
+  max-width: 95%;
+}
+`
 
 
 const Layout = ({ children }) => (
   <div>
     <Nav />
-    {children}
+    <S.Content>{children}</S.Content>
   </div>
 )
 

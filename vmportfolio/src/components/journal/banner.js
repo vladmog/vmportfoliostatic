@@ -13,12 +13,13 @@ S.Container = styled.div`
     justify-content: center;
     align-items: center;
     // border: solid red 5px;
+    // background-color: red;
 
 
 `
 
 S.Banner = styled.div`
-//   border: solid black 3px;
+  // border: solid black 3px;
   height: 100%;
   width: 100%;
   writing-mode: vertical-rl;
@@ -28,11 +29,14 @@ S.Banner = styled.div`
   transform: rotate(180deg)
   box-sizing: border-box;
 
+  @media (min-width: 1024px) {
+    width: 90vw;
+  }
   
 `
 
 S.H1 = styled.h1`
-  /* border: solid green 1px; */
+  // border: solid green 1px;
   margin: 0px;
   width: 4.5%;
   box-sizing: border-box;

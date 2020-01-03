@@ -3,34 +3,81 @@ import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Layout from "../components/layout"
 import styled from "styled-components"
+import Header from "../components/journal/mdx-components/header"
+
+
+
 
 const S = {};
 S.Container = styled.div`
   width: 100%;
   box-sizing: border-box;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // align-items: center;
-  padding: 0px 100px;
-  // border: solid green 5px;
+  align-items: center;
   font-family: 'Archivo Black', sans-serif;    
-  font-weight: 700;
   left 0px;
   right 0px;
   margin-bottom: 30px;
   margin-top: 8vh;
 
+  // @media (max-width: 1024px) {
+  //   max-width: 900px;
+  // }
+  // @media(max-width: 900px) {
+  //   max-width: 768px;
+  // }
+  // @media (max-width: 768px) {
+  //   max-width: 480px;
+  // }
+  // @media (max-width: 480px) {
+  //   max-width: 95%;
+  // }
 
-  @media (max-width: 1024px) {
 
+
+`
+
+S.Title = styled.h1`
+ margin: 0px;
+`
+
+S.Date = styled.h3`
+ margin: 0px;
+`
+
+S.Body = styled.div`
+ width: 100%;
+ h1 {
+  font-family: 'Archivo Black', sans-serif;
+ }
+
+ h2 {
+  font-family: 'Archivo Black', sans-serif;
+ }
+
+ p {
+  font-family: 'Archivo', sans-serif;
+  margin: 28px 0px 0px 0px;
+  line-height: 30px;
+  img {
+    width: 100%;
   }
-  @media (max-width: 768px) {
-      padding: 0px 40px;
-  }
-  @media (max-width: 480px) {
-      padding: 0px 20px;
-  }
+ }
+
+ a {
+  font-family: 'Archivo', sans-serif;
+
+ }
+
+ hr {
+  border: solid black 1px;
+  width: 100%;
+ }
+
+
 `
 
 export default function MdxTemplate({
@@ -38,14 +85,17 @@ export default function MdxTemplate({
 }) {
   const { mdx } = data // data.mdx holds your post data
   const { frontmatter, body } = mdx
+  console.log("description", frontmatter.description)
   return (
     <Layout>
       <S.Container className="blog-post">
-        <h1>{frontmatter.title}</h1>
+        {/* <Header title = {frontmatter.title} date = {frontmatter.date} description = {frontmatter.description}/> */}
+        <S.Title>{frontmatter.title}</S.Title>
+        <S.Date>{frontmatter.date}</S.Date>
         <hr />
-        <h2>{frontmatter.date}</h2>
-        <hr />
-        <MDXRenderer>{body}</MDXRenderer>
+        <S.Body>
+          <MDXRenderer>{body}</MDXRenderer>
+        </S.Body>
       </S.Container>
     </Layout>
   )
@@ -56,8 +106,10 @@ export const pageQuery = graphql`
     mdx(frontmatter: { path: { eq: $path } }) {
       frontmatter {
         date(formatString: "")
+        category
         path
         title
+        description
       }
       body
     }
