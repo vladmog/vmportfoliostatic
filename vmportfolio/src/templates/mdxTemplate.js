@@ -22,19 +22,20 @@ S.Container = styled.div`
   right 0px;
   margin-bottom: 30px;
   margin-top: 8vh;
+  max-width: 1024px;
 
-  // @media (max-width: 1024px) {
-  //   max-width: 900px;
-  // }
-  // @media(max-width: 900px) {
-  //   max-width: 768px;
-  // }
-  // @media (max-width: 768px) {
-  //   max-width: 480px;
-  // }
-  // @media (max-width: 480px) {
-  //   max-width: 95%;
-  // }
+  @media (max-width: 1024px) {
+    max-width: 900px;
+  }
+  @media(max-width: 900px) {
+    max-width: 768px;
+  }
+  @media (max-width: 768px) {
+    max-width: 480px;
+  }
+  @media (max-width: 480px) {
+    max-width: 95%;
+  }
 
 
 
@@ -50,8 +51,11 @@ S.Date = styled.h3`
 
 S.Body = styled.div`
  width: 100%;
+ background-color: #f5f5f5;
+
  h1 {
   font-family: 'Archivo Black', sans-serif;
+  font-size: 35px;
  }
 
  h2 {
@@ -60,10 +64,13 @@ S.Body = styled.div`
 
  p {
   font-family: 'Archivo', sans-serif;
-  margin: 28px 0px 0px 0px;
+  margin: 0px 0px 28px 0px;
   line-height: 30px;
+  font-size: 20px;
+  font-weight: 500;
   img {
     width: 100%;
+    box-sizing: border-box;
   }
  }
 
@@ -89,9 +96,12 @@ export default function MdxTemplate({
   return (
     <Layout>
       <S.Container className="blog-post">
-        {/* <Header title = {frontmatter.title} date = {frontmatter.date} description = {frontmatter.description}/> */}
-        <S.Title>{frontmatter.title}</S.Title>
-        <S.Date>{frontmatter.date}</S.Date>
+        <Header 
+          title = {frontmatter.title} 
+          date = {frontmatter.date} 
+          description = {frontmatter.description} 
+          category = {frontmatter.category}
+        />
         <hr />
         <S.Body>
           <MDXRenderer>{body}</MDXRenderer>
@@ -105,7 +115,7 @@ export const pageQuery = graphql`
   query($path: String!) {
     mdx(frontmatter: { path: { eq: $path } }) {
       frontmatter {
-        date(formatString: "")
+        date(formatString: "MMMM DD, YYYY")
         category
         path
         title

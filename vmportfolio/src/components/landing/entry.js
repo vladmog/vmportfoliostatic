@@ -49,11 +49,10 @@ S.Container = styled(props => <Link {...props} />)`
         }
         @media (max-width: 900px) {
             width: 100%;
-            font-size: 24px;
         }
         @media (max-width: 768px) {
             width: 100%;
-            font-size: 24px;
+            font-size: 18px;
         }
         @media (max-width: 480px) {
             width: 100%;
@@ -69,6 +68,7 @@ S.Container = styled(props => <Link {...props} />)`
         display: flex;
         justify-content: space-between;
         // border: solid purple 1px;
+        align-items: center;
 
         
         @media (max-width: 1024px) {

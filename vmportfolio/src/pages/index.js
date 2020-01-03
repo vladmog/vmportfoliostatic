@@ -21,6 +21,8 @@ S.Container = styled.div`
     font-weight: 700;
     font-style: normal;
     background-color: white;
+    max-width: 1500px;
+    margin: auto;
 
     footer {
         align-self: center;
@@ -76,7 +78,7 @@ export const pageQuery = graphql`
           id
           frontmatter {
             path
-            date(formatString: "MMMM DD, YYYY")
+            date
             title
             category
           }

@@ -21,7 +21,19 @@ S.Container = styled.div`
     font-weight: 700;
     left 0px;
     right 0px;
+    max-width: 1500px;
+    margin: auto;
     margin-bottom: 30px;
+    padding: 0px 100px;
+    @media (max-width: 768px) {
+        padding: 0px 40px;
+        margin-top: 10vh;
+    }
+    @media (max-width: 480px) {
+        padding: 0px 20px;
+        margin-top: 10vh;
+    }
+
 
 `
 const entries = [
@@ -95,7 +107,7 @@ export const pageQuery = graphql`
           id
           frontmatter {
             path
-            date(formatString: "MMMM DD, YYYY")
+            date
             title
             category
           }
