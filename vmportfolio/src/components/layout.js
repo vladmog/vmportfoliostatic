@@ -32,6 +32,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import "typeface-chivo"
 import "typeface-archivo"
 import "typeface-archivo-black"
 

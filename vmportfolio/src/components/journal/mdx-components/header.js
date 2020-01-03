@@ -9,17 +9,18 @@ S.Container = styled.div`
     flex-direction: column;
     // border: solid green 1px;
     box-sizing: border-box;
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Arial';
     // margin-top: 20px;
     padding: 30px 0px;
 
 `
 
 S.Title = styled.h1`
-    font-size: 35px;
-    font-family: 'Archivo', sans-serif;
-    font-weight: 700;
+    font-size: 40px;
+    font-family: 'Arial';
+    font-weight: 900;
     margin: 0px;
+    letter-spacing: -2px;
 
 `
 

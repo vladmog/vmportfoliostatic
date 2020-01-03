@@ -17,7 +17,8 @@ S.Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Archivo Black', sans-serif;    
+  // font-family: 'Archivo Black', sans-serif;    
+  font-family: 'Arial';    
   left 0px;
   right 0px;
   margin-bottom: 30px;
@@ -63,11 +64,12 @@ S.Body = styled.div`
  }
 
  p {
-  font-family: 'Archivo', sans-serif;
+  // font-family: 'Archivo', sans-serif;
   margin: 0px 0px 28px 0px;
   line-height: 30px;
   font-size: 20px;
   font-weight: 500;
+  
   img {
     width: 100%;
     box-sizing: border-box;
@@ -75,7 +77,6 @@ S.Body = styled.div`
  }
 
  a {
-  font-family: 'Archivo', sans-serif;
 
  }
 

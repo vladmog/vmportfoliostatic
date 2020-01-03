@@ -17,7 +17,7 @@ S.Container = styled.div`
     justify-content: center;
     align-items: center;
     // border: solid green 5px;
-    font-family: acumin-pro-wide, sans-serif;
+    font-family: 'Arial';
     font-weight: 700;
     left 0px;
     right 0px;
