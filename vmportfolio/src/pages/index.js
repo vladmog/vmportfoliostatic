@@ -17,7 +17,8 @@ S.Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Arial';    
+    // font-family: 'Arial';    
+    font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     font-style: normal;
     background-color: white;

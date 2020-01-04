@@ -27,6 +27,8 @@ S.Container = styled.div`
         margin-top: 25vh;
         font-size: 48px;
         text-align: left;
+        font-family: 'Gentium Basic', serif;
+
         
         @media (max-width: 1024px) {
             font-size: 32px;

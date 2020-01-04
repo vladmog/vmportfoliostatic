@@ -18,7 +18,8 @@ S.Container = styled.div`
   justify-content: center;
   align-items: center;
   // font-family: 'Archivo Black', sans-serif;    
-  font-family: 'Arial';    
+  // font-family: 'Arial';
+  font-family: 'DM Sans', sans-serif;    
   left 0px;
   right 0px;
   margin-bottom: 30px;
@@ -52,15 +53,30 @@ S.Date = styled.h3`
 
 S.Body = styled.div`
  width: 100%;
- background-color: #f5f5f5;
 
  h1 {
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Gentium Basic', serif;
   font-size: 35px;
  }
 
  h2 {
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Gentium Basic', serif;
+ }
+
+ h3 {
+  font-family: 'Gentium Basic', serif;
+ }
+
+ h4 {
+  font-family: 'Gentium Basic', serif;
+ }
+
+ h5 {
+  font-family: 'Gentium Basic', serif;
+ }
+
+ h6 {
+  font-family: 'Gentium Basic', serif;
  }
 
  p {

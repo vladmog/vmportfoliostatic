@@ -35,6 +35,8 @@ S.Container = styled.div`
         font-size: 72px;
         align-self: flex-start;
         margin: 0px 0px 8vh 0px;
+        font-family: 'Gentium Basic', serif;
+
         
         @media (max-width: 1024px) {
             font-size: 48px;
@@ -53,7 +55,6 @@ S.Container = styled.div`
     a {
         align-self: flex-end;
         font-size: 24px;
-        margin-top: 3%;
         
         
         @media (max-width: 1024px) {

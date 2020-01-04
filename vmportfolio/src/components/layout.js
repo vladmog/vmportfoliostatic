@@ -35,6 +35,8 @@ import styled from "styled-components"
 import "typeface-chivo"
 import "typeface-archivo"
 import "typeface-archivo-black"
+import "typeface-dm-sans"
+import "typeface-gentium-basic"
 
 import Nav from "./nav"
 
@@ -52,7 +54,6 @@ S.Container = styled.div`
 `
 S.Content = styled.div`
   margin: auto;
-  margin-top: 8vh;
 `
 
 

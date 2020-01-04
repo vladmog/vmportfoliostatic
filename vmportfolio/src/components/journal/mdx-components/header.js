@@ -16,19 +16,23 @@ S.Container = styled.div`
 `
 
 S.Title = styled.h1`
-    font-size: 40px;
-    font-family: 'Arial';
-    font-weight: 900;
+    font-size: 50px;
+    // font-family: 'Arial';
+    // font-family: 'DM Sans', sans-serif;
+    // font-family: 'Archivo Black', sans-serif;
+    font-family: 'Gentium Basic', serif;
+    font-weight: 400;    
     margin: 0px;
-    letter-spacing: -2px;
+    // letter-spacing: -1px;
+    line-height: 45px;
 
 `
 
 S.Description = styled.h3`
     color: #303030;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 300;
-    margin: 10px 0px;
+    margin: 10px 0px 0px 10px;
 
 `
 
@@ -37,6 +41,7 @@ S.Author = styled.div`
     justify-content: space-between;
     box-sizing: border-box;
     margin-top: 15px;
+    margin-left: 10px;
 
 `
 S.Left = styled.div`

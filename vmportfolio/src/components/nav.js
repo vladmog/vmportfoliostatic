@@ -13,10 +13,10 @@ S.Container = styled.div`
     position: fixed;
     top: 0px;
     right: 0px;
-    font-family: 'Arial';    
+    font-family: 'DM Sans', sans-serif;
 
     left: 0px;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
     box-sizing: border-box;
     background-color: white;
