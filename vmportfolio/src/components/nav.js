@@ -24,7 +24,20 @@ S.Container = styled.div`
     background-color: white;
     // display: none;
 
+    // @media (max-width: 768px) {
+    //     padding: 0px 20px;
+    // }
+
+    padding: 0px 100px;
+
+    @media (max-width: 900px) {
+        padding: 0px 60px;
+    }
+    
     @media (max-width: 768px) {
+        padding: 0px 40px;
+    }
+    @media (max-width: 480px) {
         padding: 0px 20px;
     }
     

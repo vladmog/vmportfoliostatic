@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+
+
 import SelectedWork from "./selectedWork";
 
 const S = {};
@@ -14,6 +16,10 @@ S.Container = styled.div`
     padding: 0px 100px;
     // border: solid black 1px;
     margin-top: 10vh;
+
+    @media (max-width: 900px) {
+        padding: 0px 60px;
+    }
     
     @media (max-width: 768px) {
         padding: 0px 40px;

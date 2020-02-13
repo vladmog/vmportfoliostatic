@@ -16,6 +16,10 @@ S.Container = styled.div`
     // border: solid black 1px;
     margin-top: 10vh;
     
+    @media (max-width: 900px) {
+        padding: 0px 60px;
+    }
+
     @media (max-width: 768px) {
         padding: 0px 40px;
     }
