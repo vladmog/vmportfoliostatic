@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import SelectedWork from "./selectedWork";
+
 const S = {};
 
 S.Container = styled.div`
@@ -21,64 +23,10 @@ S.Container = styled.div`
         padding: 0px 20px;
         margin-top: 10vh;
     }
-
-    h2 {
-        font-size: 72px;
-        align-self: flex-start;
-        // border: solid black 1px;
-        margin: 0px 0px 8vh 0px;
-
-        
-        @media (max-width: 1024px) {
-            font-size: 48px;
-            margin-bottom: 5vh;
-        }
-        @media (max-width: 768px) {
-            font-size: 48px;
-            margin-bottom: 5vh;
-        }
-        @media (max-width: 480px) {
-            font-size: 43px;
-            margin-bottom: 5vh;
-        }
-    }
-`
-
-S.Grid = styled.div`
-    display: grid;
-    height: 550px;
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: (2, 1fr);
-    grid-gap: 45px;
-
     
-    @media (max-width: 1024px) {
-        margin-top: 0%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: (3, 1fr);
-        grid-gap: 36px;
-        height: 500px;
-    }
-    @media (max-width: 768px) {
-        margin-top: 0%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: (3, 1fr);
-        grid-gap: 36px;
-        height: 450px;
-    }
-    @media (max-width: 480px) {
-        margin-top: 0%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: (3, 1fr);
-        grid-gap: 36px;
-        height: 450px;
-    }
-
-    div {
-        background-color: black;
-    }
 `
+
+
 
 S.Block = styled.div`
     height: 63px;
@@ -95,31 +43,66 @@ S.Block = styled.div`
     }
 `
 
+const selectedWorks = [
+    {
+        name: "Price My Airbnb",
+        body: "PriceMyAirbnb is a software solution to the problem of properly pricing Airbnb listings. Using a database of United-States AirBnb listings and data science calculations, the app lays out the financial landscape of users’ locations. This allows them to see where they stand and make informed choices on their properties.",
+        techStack: [
+            "React JS",
+            "React-Router",
+            "Axios",
+            "Chart JS",
+            "Auth0",
+            "styled-components",
+            "Node JS",
+            "Express",
+            "Knex",
+            "Postgresql"
+        ]
+    },
+    {
+        name: "Tagger",
+        body: "An email client whose data-science-infused search returns emails to queries without the need for exact word matches. As the team lead, solely responsible for coordinating group efforts and building group-dynamics. Led the team through the research and integration phases of the IMAP protocol without prior experience with the technology",
+        techStack: [
+            "React JS",
+            "React-Router",
+            "Axios",
+            "IMAP",
+            "OAuth",
+            "styled-components",
+            "Node JS",
+            "Express",
+            "Knex",
+            "Postgresql"
+        ]
+    },
+    {
+        name: "Med Cabinet",
+        body: "A web application that aids medical cannabis users by processing hundreds of strains and their cannabinoid makeups to make recommendations particular to specific user ailments. Planning and development took place over the course of one week with a team of five front-end developers, and three data-scientists.",
+        techStack: [
+            "React JS",
+            "React-Router",
+            "Axios",
+            "Redux",
+            "styled-components",
+            "Node JS",
+            "Express",
+            "Knex",
+            "Postgresql"
+        ]
+    },
+
+]
+
     
 const Quadrant3 = () => (
     <S.Container>
-        <h2>PORTFOLIO</h2>
-        <S.Grid>
-            <div>
-                
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-        </S.Grid>
-        <S.Block />
+        
+        {selectedWorks.map((selectedWork) => {
+            return (
+                <SelectedWork selectedWork = {selectedWork} />
+            )
+        })}
 
 
     </S.Container>

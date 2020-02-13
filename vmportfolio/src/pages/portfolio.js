@@ -17,9 +17,8 @@ export default () => (
         To be honest I wasn't expecting anyone to see this page yet... but here you are.
       </p>
       <p>
-        Anyway, if you'd like to contact me, feel free to email me at <a href="mailto:vladmog@gmail.com">vladmog@gmail.com</a>,
-        or DM me on Instagram at <a href = "https://www.instagram.com/lightcatch/">lightcatch</a>. You can also tweet me at 
-         <a href = "https://twitter.com/vladeeo"> vladeeo</a>.
+        Anyway, I'm polishing up my portfolio projects, and putting together this portfolio page probably as you're reading this.
+        My github handle is <a href = "https://github.com/vladmog">vladmog</a>.
       </p>
       <p>
         

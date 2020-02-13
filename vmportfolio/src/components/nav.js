@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "gatsby"
 
 const S = {}
 
@@ -7,6 +8,7 @@ S.Container = styled.div`
     z-index: 100;
     width: 100%;
     height: 8vh;
+    min-height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,21 +28,7 @@ S.Container = styled.div`
         padding: 0px 20px;
     }
     
-    
 
-    span {
-        font-size: 72px;
-        margin-left: 10px;
-
-        @media (max-width: 1024px) {
-            font-size: 48px;
-            margin-left: 0px;
-        }
-        @media (max-width: 768px) {
-            font-size: 24px;
-            margin-left: 0px;
-        }
-    }
 
     ul {
         font-size: 24px;
@@ -64,21 +52,44 @@ S.Container = styled.div`
             width: 60%;
         }
 
-        a {
-            // border: solid red 1px;
-            margin: 0px;
-            padding: 0px;
-        }
+
     }
+`
+
+S.HomeLink = styled(props => <Link {...props} />)`
+    font-size: 55px;
+    margin-left: 10px;
+    // font-family: 'Gentium Basic', serif;
+    font-family: 'DM Sans', sans-serif;
+
+    color: black;
+    text-decoration: none;
+
+
+    @media (max-width: 1024px) {
+        font-size: 48px;
+        margin-left: 0px;
+    }
+    @media (max-width: 768px) {
+        font-size: 27px;
+        margin-left: 0px;
+    }
+`
+
+S.NavLink = styled(props => <Link {...props} />)`
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    text-decoration: none;
 `
 
 const Nav = () => (
     <S.Container>
-        <span>VLAD</span>
+        <S.HomeLink to = "/">VLAD</S.HomeLink>
         <ul>
-            <a>Journal</a>
-            <a>Portfolio</a>
-            <a>Contact</a>
+            <S.NavLink to = "/journal">journal</S.NavLink>
+            <S.NavLink to = "/portfolio">portfolio</S.NavLink>
+            <S.NavLink to = "/contact">contact</S.NavLink>
         </ul>
         
     </S.Container>

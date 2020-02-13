@@ -34,21 +34,13 @@ S.Container = styled.div`
     h2 {
         font-size: 72px;
         align-self: flex-start;
-        margin: 0px 0px 8vh 0px;
+        margin: 0px 0px 1vh 0px;
         font-family: 'Gentium Basic', serif;
 
         
         @media (max-width: 1024px) {
             font-size: 48px;
-            margin-bottom: 3vh;
-        }
-        @media (max-width: 768px) {
-            font-size: 48px;
-            margin-bottom: 3vh;
-        }
-        @media (max-width: 480px) {
-            font-size: 48px;
-            margin-bottom: 3vh;
+            margin-bottom: 1vh;
         }
     }
 

@@ -12,6 +12,8 @@ S.Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    
     // border: solid red 5px;
     // background-color: red;
 

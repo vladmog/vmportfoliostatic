@@ -26,6 +26,8 @@ S.Container = styled.div`
     h2 {
         font-size: 72px;
         margin: 10% 0px 1% 0px;
+        font-family: 'Gentium Basic', serif;
+
         
         @media (max-width: 1024px) {
             font-size: 48px;

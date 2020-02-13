@@ -60,10 +60,10 @@ const Landing = ({
                 <Quadrant1 />
                 <Quadrant2 posts = {posts}/>
                 <Quadrant3 />
-                <Quadrant4 />  
-                <footer>
+                {/* <Quadrant4 />   */}
+                {/* <footer>
                     Icons made by Freepik from www.flaticon.com
-                </footer>  
+                </footer>   */}
             </S.Container>
         </Layout>
     )

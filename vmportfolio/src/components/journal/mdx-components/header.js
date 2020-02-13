@@ -9,7 +9,7 @@ S.Container = styled.div`
     flex-direction: column;
     // border: solid green 1px;
     box-sizing: border-box;
-    font-family: 'Arial';
+    font-family: 'DM Sans', sans-serif;
     // margin-top: 20px;
     padding: 30px 0px;
 
