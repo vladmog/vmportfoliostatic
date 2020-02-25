@@ -64,7 +64,10 @@ const selectedWorks = [
             "Express",
             "Knex",
             "Postgresql"
-        ]
+        ],
+        beGithub: "https://github.com/Lambda-School-Labs/airbnb-unit-price-analysis-be",
+        feGithub: "https://github.com/Lambda-School-Labs/airbnb-unit-price-analysis-fe",
+        linkUrl: "https://pricemyairbnb.netlify.com/"
     },
     {
         name: "Tagger",
@@ -80,7 +83,10 @@ const selectedWorks = [
             "Express",
             "Knex",
             "Postgresql"
-        ]
+        ],
+        beGithub: "https://github.com/Lambda-School-Labs/tagger-be",
+        feGithub: "https://github.com/Lambda-School-Labs/tagger-fe",
+        linkUrl: "https://tagger-lab.netlify.com/"
     },
     {
         name: "Med Cabinet",
@@ -95,7 +101,10 @@ const selectedWorks = [
             "Express",
             "Knex",
             "Postgresql"
-        ]
+        ],
+        beGithub: "https://github.com/vladmog/medcabinet_be/tree/Vladislav-Mogilevskiy",
+        feGithub: "https://github.com/vladmog/medcabinet_fe/tree/master/medcabinet",
+        linkUrl: "https://mcabinet.netlify.com/"
     },
 
 ]

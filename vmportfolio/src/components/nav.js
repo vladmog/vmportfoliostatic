@@ -47,7 +47,7 @@ S.Container = styled.div`
         font-size: 24px;
         width: 45%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         // border: solid black 1px;
 
     
