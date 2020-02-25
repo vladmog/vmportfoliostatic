@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "gatsby"
+
 
 import githubPng from "../../images/038-github.png";
 import webSvg from "../../images/internet.svg";
@@ -251,8 +253,10 @@ const SelectedWork = (props) => (
                 </h3>
             </div>
             <div>
-                <img src = {githubPng}/>
-                <img src = {webSvg}/>
+                <a href = {props.selectedWork.beGithub}><img src = {githubPng}/></a>
+                <a href = {props.selectedWork.feGithub}><img src = {githubPng}/></a>
+                {/* <img src = {githubPng}/> */}
+                <a href = {props.selectedWork.linkUrl}><img src = {webSvg}/></a>
             </div>
         </S.Left>
 
