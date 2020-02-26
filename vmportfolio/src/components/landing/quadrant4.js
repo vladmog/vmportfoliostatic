@@ -3,6 +3,8 @@ import styled from "styled-components";
 import instagramPng from "../../images/025-instagram.png"
 import githubPng from "../../images/038-github.png"
 import twitterPng from "../../images/043-twitter.png"
+import mailSvg from "../../images/mail.svg"
+import linkedinSvg from "../../images/linkedin.svg"
 
 const S = {};
 
@@ -12,9 +14,13 @@ S.Container = styled.div`
     padding: 0px 100px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
     // border: solid black 1px;
     margin-top: 10vh;
+    // border: solid red 1px;
+    min-height: 20vh;
+
     
     @media (max-width: 900px) {
         padding: 0px 60px;
@@ -48,13 +54,28 @@ S.Container = styled.div`
         list-style-type: none;
         width: 100%;
         padding: 0px;
+        // border: solid red 1px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
 
         li {
-            font-size: 36px;
+            font-size: 20px;
             text-align: left;
             display: flex;
             align-items: center;
             margin-bottom: 10px;
+            // border: solid black 1px;
+            margin: 10px 40px;
+
+            a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: black;
+                text-decoration: none;
+                width: 70px;
+            }
 
             @media (max-width: 1024px) {
                 font-size: 24px;
@@ -75,6 +96,7 @@ S.Container = styled.div`
     img {
         height: 70px;
         width: 70px;
+        // border: solid green 1px;
 
         @media (max-width: 768px) {
             height: 54px;
@@ -91,29 +113,54 @@ S.Placeholder = styled.div`
     width: 70px;
     height: 70px;
 `
-
+const contactInfo = [
+    {
+        name: "instagram",
+        icon: instagramPng,
+        handle: "lightcatch",
+        url: "https://www.instagram.com/lightcatch/"
+    },
+    {
+        name: "github",
+        icon: githubPng,
+        handle: "vladmog",
+        url: "https://github.com/vladmog"
+    },
+    {
+        name: "twitter",
+        icon: twitterPng,
+        handle: "vladmog",
+        url: "https://twitter.com/vladeeo"
+    },
+    {
+        name: "linkedin",
+        icon: linkedinSvg,
+        handle: "vladmog",
+        url: "https://www.linkedin.com/in/vladmog/"
+    },
+    {
+        name: "email",
+        icon: mailSvg,
+        handle: "vladmog@gmail.com",
+        url: "mailto:vladmog@gmail.com"
+    }
+]
 
 
 const Quadrant4 = (props) => (
     <S.Container>
-        <h2>CONTACT</h2>
+        {/* <h2>CONTACT</h2> */}
         <ul>
-            <li>
-                <S.Placeholder />
-                <span>vladmog@gmail.com</span>
-            </li>
-            <li>
-                <img src = {instagramPng} />
-                <span>lightcatch</span>
-            </li>
-            <li>
-                <img src = {githubPng} />
-                <span>vladmog</span>
-            </li>
-            <li>
-                <img src = {twitterPng} />
-                <span>vladeeo</span>
-            </li>
+            {contactInfo.map((artifact) => {
+                return (
+                    <li key = {artifact.name}>
+                        <a href = {artifact.url}>
+                            <img src = {artifact.icon} />
+                            <span>{artifact.handle}</span>
+                        </a>
+                    </li>
+                )
+            })}
         </ul>
     </S.Container>
 )
