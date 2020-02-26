@@ -253,10 +253,9 @@ const SelectedWork = (props) => (
                 </h3>
             </div>
             <div>
-                <a href = {props.selectedWork.beGithub}><img src = {githubPng}/></a>
-                <a href = {props.selectedWork.feGithub}><img src = {githubPng}/></a>
-                {/* <img src = {githubPng}/> */}
-                <a href = {props.selectedWork.linkUrl}><img src = {webSvg}/></a>
+                <a title = "Backend repository" href = {props.selectedWork.beGithub}><img src = {githubPng}/></a>
+                <a title = "Frontend repository" href = {props.selectedWork.feGithub}><img src = {githubPng}/></a>
+                <a title = "Deployed link" href = {props.selectedWork.linkUrl}><img src = {webSvg}/></a>
             </div>
         </S.Left>
 

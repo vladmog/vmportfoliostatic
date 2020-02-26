@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby"
+import scrollTo from 'gatsby-plugin-smoothscroll';
+
 
 const S = {}
 
@@ -100,9 +102,12 @@ const Nav = () => (
     <S.Container>
         <S.HomeLink to = "/">VLAD</S.HomeLink>
         <ul>
-            <S.NavLink to = "/journal">journal</S.NavLink>
+            <a onClick={() => scrollTo('#stop1')}>journal</a>
+            <a onClick={() => scrollTo('#stop2')}>portfolio</a>
+            <a onClick={() => scrollTo('#stop3')}>contact</a>
+            {/* <S.NavLink to = "/journal">journal</S.NavLink>
             <S.NavLink to = "/portfolio">portfolio</S.NavLink>
-            <S.NavLink to = "/contact">contact</S.NavLink>
+            <S.NavLink to = "/contact">contact</S.NavLink> */}
         </ul>
         
     </S.Container>

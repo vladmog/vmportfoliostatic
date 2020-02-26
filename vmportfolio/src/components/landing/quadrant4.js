@@ -66,7 +66,7 @@ S.Container = styled.div`
             align-items: center;
             margin-bottom: 10px;
             // border: solid black 1px;
-            margin: 10px 40px;
+            // margin: 10px 40px;
 
             a {
                 display: flex;
@@ -129,7 +129,7 @@ const contactInfo = [
     {
         name: "twitter",
         icon: twitterPng,
-        handle: "vladmog",
+        handle: "vladeeo",
         url: "https://twitter.com/vladeeo"
     },
     {
@@ -148,15 +148,15 @@ const contactInfo = [
 
 
 const Quadrant4 = (props) => (
-    <S.Container>
+    <S.Container id = "stop3">
         {/* <h2>CONTACT</h2> */}
         <ul>
             {contactInfo.map((artifact) => {
                 return (
-                    <li key = {artifact.name}>
+                    <li key = {artifact.name} title = {artifact.handle}>
                         <a href = {artifact.url}>
                             <img src = {artifact.icon} />
-                            <span>{artifact.handle}</span>
+                            {/* <span>{artifact.handle}</span> */}
                         </a>
                     </li>
                 )

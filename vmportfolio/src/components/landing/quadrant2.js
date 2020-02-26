@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import { Link } from "gatsby"
 
+
 import Entry from "./entry";
 
 const S = {};
@@ -122,7 +123,7 @@ const Quadrant2 = (props) => (
             )
         })}
         <S.MoreLink to = "/journal">MORE</S.MoreLink>
-        <S.Block />
+        <S.Block id = "stop2"/>
     </S.Container>
 )
 

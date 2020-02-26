@@ -73,7 +73,7 @@ const Quadrant1 = () => (
     <S.Container>
         <h1>Los Angeles based Full Stack web developer, visual artist, and node in the universe</h1>
         <S.BlockContainer>
-            <S.Block />
+            <S.Block id = "stop1" />
         </S.BlockContainer>
     </S.Container>
 )
