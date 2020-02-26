@@ -57,7 +57,6 @@ S.Container = styled.div`
         // border: solid red 1px;
         display: flex;
         justify-content: space-around;
-        flex-wrap: wrap;
 
         li {
             font-size: 20px;
@@ -75,6 +74,10 @@ S.Container = styled.div`
                 color: black;
                 text-decoration: none;
                 width: 70px;
+
+                @media (max-width: 430px) {
+                    width: 45px;
+                }
             }
 
             @media (max-width: 1024px) {
@@ -105,6 +108,10 @@ S.Container = styled.div`
         @media (max-width: 480px) {
             height: 54px;
             width: 54px;
+        }
+        @media (max-width: 430px) {
+            height: 45px;
+            width: 45px;
         }
     }
 `

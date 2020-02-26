@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 
 import githubPng from "../../images/038-github.png";
 import webSvg from "../../images/internet.svg";
+import eyeSvg from "../../images/eye.svg"
 
 const S = {};
 
@@ -255,7 +256,7 @@ const SelectedWork = (props) => (
             <div>
                 <a title = "Backend repository" href = {props.selectedWork.beGithub}><img src = {githubPng}/></a>
                 <a title = "Frontend repository" href = {props.selectedWork.feGithub}><img src = {githubPng}/></a>
-                <a title = "Deployed link" href = {props.selectedWork.linkUrl}><img src = {webSvg}/></a>
+                <a title = "Deployed link" href = {props.selectedWork.linkUrl}><img src = {eyeSvg}/></a>
             </div>
         </S.Left>
 

@@ -14,7 +14,6 @@ S.Container = styled.div`
     align-items: center;
     width: 100%;
     padding: 0px 100px;
-    // border: solid black 1px;
     margin-top: 10vh;
 
     @media (max-width: 900px) {

@@ -78,6 +78,16 @@ S.Block = styled.div`
         height: 50px;
     }
 `
+S.InvisiBlock = styled(S.Block)`
+    background-color: initial;
+    align-self: flex-start;
+    margin: 0px;
+    border-radius: 2px;    
+    @media (max-width: 768px) {
+        width: 50px;
+        height: 50px;
+    }
+`
 
 S.MoreLink = styled(props => <Link {...props} />)`
     color: black;
@@ -123,7 +133,12 @@ const Quadrant2 = (props) => (
             )
         })}
         <S.MoreLink to = "/journal">MORE</S.MoreLink>
-        <S.Block id = "stop2"/>
+        <S.Block>
+            {/* Invisiblocks used to set a scroll point at an ideal spot */}
+            <S.InvisiBlock/>
+            <S.InvisiBlock/>
+            <S.InvisiBlock id = "stop2"/>
+        </S.Block>
     </S.Container>
 )
 
