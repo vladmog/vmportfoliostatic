@@ -54,6 +54,7 @@ S.Container = styled.div`
 `
 S.Content = styled.div`
   margin: auto;
+  margin-top: 8vh;
 `
 
 

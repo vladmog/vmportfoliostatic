@@ -22,7 +22,7 @@ S.Container = styled.div`
   font-family: 'DM Sans', sans-serif;    
   left 0px;
   right 0px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
   margin-top: 8vh;
   max-width: 1024px;
 
@@ -61,6 +61,7 @@ S.Body = styled.div`
 
  h2 {
   font-family: 'Gentium Basic', serif;
+  margin-top: 50px;
  }
 
  h3 {
@@ -83,7 +84,7 @@ S.Body = styled.div`
   // font-family: 'Archivo', sans-serif;
   margin: 0px 0px 28px 0px;
   line-height: 30px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   
   img {

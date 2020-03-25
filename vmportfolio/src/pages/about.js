@@ -1,9 +1,17 @@
 import React from "react"
 import Layout from "../components/layout"
+import me from "../images/noback.png"
+import styled from "styled-components";
+
+const S = {};
+
+S.Me = styled.img`
+  width: 40%;
+`
 
 export default () => (
   <Layout>
-    <h1>About me</h1>
-    <p>I’m good enough, I’m smart enough, and gosh darn it, people like me!</p>
+]    <S.Me src = {me} />
+
   </Layout>
 )
