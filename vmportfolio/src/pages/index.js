@@ -8,6 +8,7 @@ import Quadrant3 from "../components/landing/quadrant3";
 import Quadrant4 from "../components/landing/quadrant4";
 
 import Layout from "../components/layout";
+import HomeNav from "../components/homenav";
 
 const S = {};
 
@@ -61,8 +62,9 @@ const Landing = ({
     })
     console.log(posts)
     return (
-        <Layout>
+        // <Layout>
             <S.Container>
+                <HomeNav />
                 <Quadrant1 />
                 <Quadrant2 posts = {posts}/>
                 <Quadrant3 />
@@ -71,7 +73,7 @@ const Landing = ({
                     <div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a>, <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>, <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
                 </footer>  
             </S.Container>
-        </Layout>
+        // </Layout>
     )
   }
 
