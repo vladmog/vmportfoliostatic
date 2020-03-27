@@ -100,8 +100,9 @@ S.NavLink = styled(props => <Link {...props} />)`
 
 
 const Nav = (props) => {
-    return(
-        <S.Container>
+    if (window)
+    {return(
+        <>
             {window.location.pathname === "/"
             ?(
                 <S.Container>
@@ -125,8 +126,8 @@ const Nav = (props) => {
                 </S.Container>
             )}
             
-        </S.Container>
-    )
+        </>
+    )}
 }
 
 
