@@ -103,10 +103,10 @@ S.NavLink = styled(props => <Link {...props} />)`
 
 const Nav = (props) => {
     console.log("URL", history.location.pathname)
-    // if (typeof window !== `undefined`)
-    // {
-    //     return(
-            // <>
+    if (typeof window !== `undefined`)
+    {
+        return(
+            <>
                 {history.location.pathname === "/"
                 ?(
                     <S.Container>
@@ -130,12 +130,12 @@ const Nav = (props) => {
                     </S.Container>
                 )}
                 
-            // </>
-    // )} else{
-    //     return(
-    //         <></>
-    //     )
-    // }
+            </>
+    )} else{
+        return(
+            <></>
+        )
+    }
 }
 
 
