@@ -71,7 +71,7 @@ S.Container = styled.div`
     }
 `
 
-S.HomeLink = styled(props => <Link {...props} />)`
+S.HomeLink = styled.a`
     font-size: 55px;
     margin-left: 10px;
     // font-family: 'Gentium Basic', serif;
@@ -102,7 +102,7 @@ S.NavLink = styled(props => <Link {...props} />)`
 const HomeNav = (props) => (
 
     <S.Container>
-        <S.HomeLink to = "/">VLAD</S.HomeLink>
+        <S.HomeLink onClick={() => scrollTo('#stop0')}>VLAD</S.HomeLink>
         <ul>
             <a onClick={() => scrollTo('#stop1')}>journal</a>
             <a onClick={() => scrollTo('#stop2')}>portfolio</a>

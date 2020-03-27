@@ -44,6 +44,12 @@ S.Container = styled.div`
             font-size: 28px;
         }
     }
+
+    span {
+        position: absolute;
+        top: 0;
+        
+    }
 `
 
 S.BlockContainer = styled.div`
@@ -71,6 +77,7 @@ S.Block = styled.div`
 
 const Quadrant1 = () => (
     <S.Container>
+        <span id = "stop0"></span>
         <h1>Los Angeles based Full Stack web developer, visual artist, and node in the universe</h1>
         <S.BlockContainer>
             <S.Block id = "stop1" />
