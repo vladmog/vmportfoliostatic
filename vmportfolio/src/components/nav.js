@@ -100,7 +100,7 @@ S.NavLink = styled(props => <Link {...props} />)`
 
 
 const Nav = (props) => {
-    if (window)
+    if (typeof window !== `undefined`)
     {return(
         <>
             {window.location.pathname === "/"
