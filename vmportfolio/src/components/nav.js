@@ -96,6 +96,7 @@ S.NavLink = styled(props => <Link {...props} />)`
     padding: 0px;
     color: black;
     text-decoration: none;
+    cursor: pointer;
 `
 
 

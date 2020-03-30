@@ -52,6 +52,10 @@ S.Container = styled.div`
         justify-content: space-between;
         // border: solid black 1px;
 
+        a {
+            cursor: pointer;
+        }
+
     
        
         @media (max-width: 768px) {
