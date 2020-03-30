@@ -23,7 +23,7 @@ S.Container = styled.div`
     right 0px;
     max-width: 1500px;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
     padding: 0px 100px;
     @media (max-width: 768px) {
         padding: 0px 40px;
