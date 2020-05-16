@@ -136,17 +136,6 @@ All in all, though, I didn't fail my team. We overcame what others thought to be
 
 ---
 
-## Body
-
-
-
-- I did not let the outcome of the project influence my energy.
-
-  - The state of progress can fluctuate greatly, and you cannot let those fluctuations be reflected in your morale
-  - Never get discouraged by failure, it brings everyone down and it doesn't move the mission forward.
-    - When things don't go according to plan, the first thing I do is evaluate the situation and look for a valid alternative.
-  - Similarly, don't relax when great strides are achieved. Salute the team and give congratulations when deserved, but don't let successes be an excuse to relax. Keep moving.
-
 ## I used my enthusiasm to influence the outcome of the project
 
 I believe the most important aspect a team could have to be successful is a solid team dynamic.
@@ -177,80 +166,28 @@ Similarly, allowing great successes to be seen as a reason to relax and slow dow
 
 ---
 
-* I didn't multi-task
-
-  - Multi-tasking makes for sloppy work, and when dealing with people, disenables you from being able to fully absorb what the person is saying and can come across as disrespectful.
-  - ex: don't read/write email while in meetings, pay full attention.
-    - It came across as disrespectful and unprofessional to me seeing others in meetings reading emails or laughing at something else
-    - It prevents you from fully absorbing what is said and shows a lack of priority.
-  - ex: attack a problem at a time and give it your full attention
-    - Remote work taught the necessity of focus because the rest of the world is essentially available at your finger tips at any given time.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## I didn't multitask
 
-Multitasking is often flexed as a positive quality. Some companies say that they seek, and individuals claim that they are,  someone who is able to multitask at all times with great efficiency. That's a whole bunch of rubbish. I don't buy it. When you focus your mind on two different things, you're only able to give 50% of your attention to each of the things. The amount of attention you can pay to any given task only goes down as you add more things to focus on. 
+Multitasking is often flexed as a positive quality. Some companies say that they seek, and individuals claim that they are,  someone who is able to multitask at all times with great efficiency. I don't subscribe to this mentality. In my experience, the most efficient way to work is to focus on a task at a time so as to give it full attention. When you focus your mind on two different things, you're only able to give 50% of your attention to each of the things. Increase the amount of things being focused on and that percentage only goes down. 
 
-Also, while we're on this topic, let's talk about multitasking during meetings. P
+During meetings I never browsed the internet or checked my emails unless it was for the purposes of the meeting. In remote environments this is a particular issue because the entire world is essentially at one's fingertips. It's all too often that I see others distracted laughing at something on the internet only to become flustered when they're asked to discuss the subject they'd failed to hear.
 
+In regards to tasks, I always maintained a plan so that I could get multiple tasks done while only having to focus on one at a time. Switching between tasks when certain processes allow you time to step away and focus on something else is different than multitasking because you can still fully commit yourself to the task at hand. Being able to foresee these opportunities and plan with them in mind is crucial to efficiency. 
 
-
-
-
-
+But how do I get things done as a leader with this mentality? Well...
 
 
 
+## I planned so multiple things are being accomplished at all times
 
+When leading a team, multiples things can be accomplished concurrently because multiple minds can focus on multiple tasks. 
 
+This became clear immediately the first time I led an AGILE team. I tried leading a group of five developers to solve problems the same way I solve problems as an individual, one at a time. The issue became apparent when only 1-2 people were actively working on the problem while the rest sat back and watched. I realized that having more people attack a problem doesn't speed up how fast that task would get accomplished.
 
+What I did then was I created a list of problems that could be immediately worked on, along with the minimum amount of people I thought each task would require to be solved quickly. Then I allocated tasks to individuals best able to solve the particular task. Doing this allowed the team to make progress at its full potential. The benefit was so clear, I made that process a daily part of writing a plan. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* I planned so multiple things are being accomplished at all times.
-
-  - (DEPRECATED) While multi-tasking is disadvantageous for an individual, a team of individuals has the capacity to attack multiple problems at the same time. Taking this into consideration when planning how a team is to attack a problem over time is crucial to efficiency.
-  - Identify how many people a task can most efficiently be accomplished with. Compare this to the total amount of team members and their capabilities.
-    - I first tried leading a group to solve problems the same way I solve problems. Mob programming turned out to be inefficient. Had to find another way
-  - Be aware of dependencies. What tasks require other tasks to be completed prior to beginning the original task? Take this into consideration
+Oh yeah, about that...
 
 ---
 
@@ -286,3 +223,7 @@ Long story short, we improvised and we succeeded. Not only did we rebuild the pr
    Once nerves have settled, the problem is re-evaluated, and an alternative is settled on, waste no time in execution. Plan your attack, allocate responsibilities, and get moving.
 
 ---
+
+In summary, I managed to survive and excel as a leader by focusing on the team itself, understanding the problem at hand, and constantly evaluating the situation to best plan how to approach problems as a unit. To further simplify how to survive as a leader, I can put it this way: be present. By being aware of the state of the project and the team members themselves, the immediate tasks that require attention make themselves known. This goes for leading teams as much as it goes for daily life. If anything is to be taken away from this post it's that. Always be present and pay attention to the situation at hand from all angles and solutions will always make themselves known. 
+
+I hope my experiences and principles prove helpful and help you go out and lead others to do something great. 
