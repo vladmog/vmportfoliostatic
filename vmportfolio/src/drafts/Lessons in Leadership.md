@@ -186,6 +186,65 @@ Similarly, allowing great successes to be seen as a reason to relax and slow dow
   - ex: attack a problem at a time and give it your full attention
     - Remote work taught the necessity of focus because the rest of the world is essentially available at your finger tips at any given time.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## I didn't multitask
+
+Multitasking is often flexed as a positive quality. Some companies say that they seek, and individuals claim that they are,  someone who is able to multitask at all times with great efficiency. That's a whole bunch of rubbish. I don't buy it. When you focus your mind on two different things, you're only able to give 50% of your attention to each of the things. The amount of attention you can pay to any given task only goes down as you add more things to focus on. 
+
+Also, while we're on this topic, let's talk about multitasking during meetings. P
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * I planned so multiple things are being accomplished at all times.
 
   - (DEPRECATED) While multi-tasking is disadvantageous for an individual, a team of individuals has the capacity to attack multiple problems at the same time. Taking this into consideration when planning how a team is to attack a problem over time is crucial to efficiency.
