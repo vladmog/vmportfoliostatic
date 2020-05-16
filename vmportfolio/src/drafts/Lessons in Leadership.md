@@ -138,14 +138,7 @@ All in all, though, I didn't fail my team. We overcame what others thought to be
 
 ## Body
 
-- The energy I put into the project influenced the outcome.
 
-  - My energy influences the team to relax their nerves
-    - Be patient but keep moving forward
-    - firm yet easygoing
-    - playful yet focused
-  - My team in turn builds greater connections with one another
-  - A team that communicates more executes on solutions more efficiently
 
 - I did not let the outcome of the project influence my energy.
 
@@ -171,6 +164,34 @@ Finally this leaves those that lack motivation. How do you get everyone to be ex
 Taking this experience back to working with new teams, I've found certain things work particularly well for building group dynamics. For example, giving team members a reason to express themselves allows those that are shy the rare experience of receiving positive feedback from people they don't know.
 
 ## I did not let the outcome of the project influence my enthusiasm
+
+The state of a project can fluctuate greatly, Somedays things can be moving along so smoothly that it sets you ahead of schedule. Other times it may seem that so many things are going wrong that deadlines begin to feel impossible to meet.
+
+Regardless of how things have gone, I have always kept the same attitude and approach to leading. If things are breaking left and right, there is work to be done. If great progress has been made, perhaps some congratulations are in order, but still, there is yet work to be done.
+
+It's almost a given that something will go wrong over the course of a project. As such, it makes no sense to get upset when it does. This only serves to bring down the morale of the team, and allowing that to happen can be even more devastating than the problem at hand. Rather than adding to the weight of existing problems, I've always framed each obstacle as a new opportunity for the team to learn and demonstrate their ability to adapt.
+
+Similarly, allowing great successes to be seen as a reason to relax and slow down can negate those very successes. Any surplus of momentum is precious and the only way to reap the benefits of it are to maintain it. The time to celebrate is when the mission has been accomplished. Until then, celebrating successes early puts the team at risk of falling back to baseline progress, if not behind schedule.
+
+
+
+---
+
+* I didn't multi-task
+
+  - Multi-tasking makes for sloppy work, and when dealing with people, disenables you from being able to fully absorb what the person is saying and can come across as disrespectful.
+  - ex: don't read/write email while in meetings, pay full attention.
+    - It came across as disrespectful and unprofessional to me seeing others in meetings reading emails or laughing at something else
+    - It prevents you from fully absorbing what is said and shows a lack of priority.
+  - ex: attack a problem at a time and give it your full attention
+    - Remote work taught the necessity of focus because the rest of the world is essentially available at your finger tips at any given time.
+
+* I planned so multiple things are being accomplished at all times.
+
+  - (DEPRECATED) While multi-tasking is disadvantageous for an individual, a team of individuals has the capacity to attack multiple problems at the same time. Taking this into consideration when planning how a team is to attack a problem over time is crucial to efficiency.
+  - Identify how many people a task can most efficiently be accomplished with. Compare this to the total amount of team members and their capabilities.
+    - I first tried leading a group to solve problems the same way I solve problems. Mob programming turned out to be inefficient. Had to find another way
+  - Be aware of dependencies. What tasks require other tasks to be completed prior to beginning the original task? Take this into consideration
 
 ---
 
