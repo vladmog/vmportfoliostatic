@@ -78,7 +78,7 @@ S.Block = styled.div`
 const Quadrant1 = () => (
     <S.Container>
         <span id = "stop0"></span>
-        <h1>Los Angeles based Full Stack web developer, visual artist, and node in the universe</h1>
+        <h1>Los Angeles based Full Stack Software Engineer, visual artist, and node in the universe</h1>
         <S.BlockContainer>
             <S.Block id = "stop1" />
         </S.BlockContainer>
